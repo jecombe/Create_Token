@@ -6,13 +6,19 @@
 #    By: jecombe <marvin@le-101.fr>                 +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/02/09 12:53:04 by jecombe      #+#   ##    ##    #+#        #
-#    Updated: 2018/02/09 13:30:51 by jecombe     ###    #+. /#+    ###.fr      #
+#    Updated: 2018/02/09 13:41:59 by jecombe     ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 
 pragma solidity ^0.4.4;
+
+/*************************************************************************/
+/*																		 */
+/*							Token										 */
+/*			https://github.com/ethereum/EIPs/issues/20					 */
+/*************************************************************************/
 
 contract Token {
 
@@ -52,6 +58,12 @@ contract Token {
 	event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
 }
+
+/*************************************************************************/
+/*																		 */
+/*							Standard Token							     */
+/*																		 */
+/*************************************************************************/
 
 contract StandardToken is Token {
 
@@ -98,6 +110,12 @@ contract StandardToken is Token {
 	mapping (address => mapping (address => uint256)) allowed;
 	uint256 public totalSupply;
 }
+
+/*************************************************************************/
+/*																		 */
+/*							Advanced_Token1							     */
+/*																		 */
+/*************************************************************************/
 
 contract Advanced_Token1 is StandardToken { // CHANGE THIS. Update the contract name.
 
