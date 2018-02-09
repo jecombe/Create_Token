@@ -15,9 +15,9 @@
 pragma solidity ^0.4.4;
 
 /*************************************************************************/
-/*																		 */
-/*							Token										 */
-/*			https://github.com/ethereum/EIPs/issues/20					 */
+/*									 */
+/*					Token		 		 */
+/*			https://github.com/ethereum/EIPs/issues/20	 */
 /*************************************************************************/
 
 contract Token {
@@ -60,9 +60,9 @@ contract Token {
 }
 
 /*************************************************************************/
-/*																		 */
-/*							Standard Token							     */
-/*																		 */
+/*									 */
+/*				Standard Token	 			 */
+/*									 */
 /*************************************************************************/
 
 contract StandardToken is Token {
@@ -112,9 +112,9 @@ contract StandardToken is Token {
 }
 
 /*************************************************************************/
-/*																		 */
-/*							Advanced_Token1							     */
-/*																		 */
+/*									 */
+/*				Advanced_Token1	 			 */
+/*									 */
 /*************************************************************************/
 
 contract Advanced_Token1 is StandardToken { // CHANGE THIS. Update the contract name.
